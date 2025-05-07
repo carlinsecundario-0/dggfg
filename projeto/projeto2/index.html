@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diário de Livros</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Meu Diário de Livros</h1>
+        <nav>
+            <a href="#">Início</a>
+            <a href="#">Adicionar Livro</a>
+        </nav>
+    </header>
+    <main>
+        <section class="book-entry">
+            <h2>Adicionar Novo Livro</h2>
+            <form id="book-form">
+                <label for="title">Título do Livro:</label>
+                <input type="text" id="title" name="title" required><br>
+
+                <label for="author">Autor:</label>
+                <input type="text" id="author" name="author" required><br>
+
+                <label for="start-date">Data de Início:</label>
+                <input type="date" id="start-date" name="start-date" required><br>
+
+                <label for="end-date">Data de Término:</label>
+                <input type="date" id="end-date" name="end-date" required><br>
+
+                <label for="duration">Tempo de Leitura (dias):</label>
+                <input type="number" id="duration" name="duration" required><br>
+
+                <label for="opinion">Opinião:</label>
+                <textarea id="opinion" name="opinion" rows="4" required></textarea><br>
+
+                <label for="quote">Frase Interessante:</label>
+                <textarea id="quote" name="quote" rows="2" required></textarea><br>
+
+                <label for="rating">Nota (estrelas):</label>
+                <div class="rating">
+                    <input type="radio" id="star5" name="rating" value="5"><label for="star5" title="5 estrelas">★</label>
+                    <input type="radio" id="star4" name="rating" value="4"><label for="star4" title="4 estrelas">★</label>
+                    <input type="radio" id="star3" name="rating" value="3"><label for="star3" title="3 estrelas">★</label>
+                    <input type="radio" id="star2" name="rating" value="2"><label for="star2" title="2 estrelas">★</label>
+                    <input type="radio" id="star1" name="rating" value="1"><label for="star1" title="1 estrela">★</label>
+                </div><br>
+
+                <label for="cover">URL da Capa:</label>
+                <input type="url" id="cover" name="cover" required><br>
+
+                <input type="submit" value="Adicionar Livro">
+            </form>
+        </section>
+
+        <section class="book-list">
+            <h2>Meus Livros</h2>
+            <div id="books-container"></div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Meu Diário de Livros. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+

@@ -1,0 +1,17 @@
+#cabecalho {background:silver;
+            height: 12mm;
+            padding: 3mm;
+            display: table;}
+
+#barra_navegacao {background: yellow;
+                  padding: 2mm;}
+
+#corpo {background: white;
+        width: 100%;
+        display: table;}
+
+#rodape {background: gray;
+         text-align: center;}
+
+#logo {background: blue;
+      float: left;}
